@@ -6,7 +6,16 @@ type Props = {
 };
 
 const GlassPane = ({ children, className }: Props) => {
-  return <div className={clsx(className, 'glass round-2xl')}>{children}</div>;
+  return (
+    <div
+      className={clsx(
+        className,
+        'glass rounded-2xl border-solid border-2 border-gray-200'
+      )}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default GlassPane;

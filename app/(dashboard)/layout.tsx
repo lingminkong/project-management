@@ -8,10 +8,13 @@ type Props = {
 
 const DashboardRootLayout = ({ children }: Props) => {
   return (
-    <html>
+    <html lang="en">
       <head />
-      <body>
-        <GlassPane>{children}</GlassPane>
+      {/* <head /> here will automatically use content in head.tsx */}
+      <body className="h-screen w-screen candy-mesh p-6">
+        <GlassPane className="w-full h-full p-6 flex align-center container mx-auto">
+          {children}
+        </GlassPane>
       </body>
     </html>
   );
