@@ -1,11 +1,11 @@
-import Button from '@/components/Button';
+'use client';
 import React from 'react';
+import AuthForm from '@/components/AuthForm';
+import Button from '@/components/Button';
 
 const Register = () => {
   return (
-    <div>
-      <Button intent="secondary">Register</Button>
-    </div>
+    <AuthForm type='register'/>
   );
 };
 

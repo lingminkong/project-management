@@ -13,7 +13,6 @@ const AuthRootLayout = ({ children }: Props) => {
       {/* <head /> here will automatically use content in head.tsx */}
       <body className="h-screen w-screen rainbow-mesh p-6">
         <GlassPane className="w-full h-full flex items-center justify-center">
-          <p>Test layout</p>
           {children}
         </GlassPane>
       </body>
