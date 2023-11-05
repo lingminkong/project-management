@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { serialize } from 'cookie';
 
 const signIn = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== 'POST') {
+  if (req.method === 'POST') {
     const user = await db.user.findUnique({
       where: {
         email: req.body.email,
